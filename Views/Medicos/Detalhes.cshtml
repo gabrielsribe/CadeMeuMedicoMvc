@@ -1,0 +1,99 @@
+﻿@model CadeMeuMedico.Models.Medicos
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Medicos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CRM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CRM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AtendePorConvenio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AtendePorConvenio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TemClinica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TemClinica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WebsiteBlog)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WebsiteBlog)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cidades.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cidades.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Especialidades.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Especialidades.Nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDMedico }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
